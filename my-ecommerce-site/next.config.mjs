@@ -1,4 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+    images: {
+        domains: ["static.coupangcdn.com", "pages.coupang.com", "image6.coupangcdn.com", "image7.coupangcdn.com", "image9.coupangcdn.com", "image10.coupangcdn.com", 
+        ],
+    },
+};
 
 export default nextConfig;
