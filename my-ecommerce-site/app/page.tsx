@@ -10,7 +10,7 @@ export default function Home() {
         <MainToday />
       </div>
       <div className="container mx-auto px-4">
-        <ProductCarousel />
+        <ProductCarousel/>
       </div>
     </main>
   )
