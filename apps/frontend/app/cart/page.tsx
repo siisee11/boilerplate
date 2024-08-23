@@ -142,7 +142,9 @@ export default function Component() {
   return (
     <div className="flex flex-col items-center container mx-auto p-4 bg-gray-100">
       <div>
-        <Image src="https://image7.coupangcdn.com/image/coupang/common/logo_coupang_w350.png" alt="Coupang Logo" width={150} height={40} className="my-5"/>
+        <a href="/">
+          <Image src="https://image7.coupangcdn.com/image/coupang/common/logo_coupang_w350.png" alt="Coupang Logo" width={150} height={40} className="my-5"/>
+        </a>
         <div className="flex-1 bg-white shadow-xl p-10">
           <div className="flex flex-row pb-10 justify-between">
             <h1 className="text-4xl font-bold">장바구니</h1>

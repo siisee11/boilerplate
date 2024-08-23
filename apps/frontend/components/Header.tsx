@@ -38,7 +38,9 @@ function SearchBar() {
         placeholder="찾고 싶은 상품을 검색해보세요!"
         className="w-full p-2 pl-10 border border-blue-300 rounded-md"
       />
-      <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+      <a href="/search">
+        <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+      </a>
     </div>
   )
 }
