@@ -6,6 +6,6 @@ yarn set version berry
 
 ```
 $ yarn dev       // run all
-$ yarn fe de     // run frontend
+$ yarn fe dev     // run frontend
 $ yarn be dev    // run backend
 ```
