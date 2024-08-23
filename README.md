@@ -2,6 +2,13 @@
 
 yarn set version berry
 
+## How to install
+
+```
+$ yarn install
+$ yarn workspaces focus backend
+```
+
 ## How to run
 
 ```
