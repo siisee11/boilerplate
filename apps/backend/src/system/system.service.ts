@@ -4,8 +4,8 @@ import { Injectable, Logger } from '@nestjs/common';
 export class SystemService {
   protected readonly logger = new Logger(this.constructor.name);
 
-  ping(): string {
-    this.logger.log('ping');
-    return 'pong';
+  health(): string {
+    this.logger.log('Healthy!');
+    return 'Healthy!';
   }
 }
