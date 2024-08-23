@@ -9,3 +9,10 @@ $ yarn dev       // run all
 $ yarn fe dev     // run frontend
 $ yarn be dev    // run backend
 ```
+
+## How to add packages
+
+```
+$ yarn fe add <package_name>
+$ yarn be add <package_name>
+```
