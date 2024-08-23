@@ -69,7 +69,6 @@ export default function createLogger() {
           colors: true,
           prettyPrint: true,
           processId: true,
-          appName: true,
         }),
       ),
     }),

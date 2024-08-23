@@ -1,14 +1,14 @@
 {
-  "name": "my-ecommerce-site",
+  "name": "next-nest-boilerplate",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "yarn workspaces foreach --all -pt run dev",
+    "fe": "yarn workspace frontend",
+    "be": "yarn workspace backend"
   },
   "workspaces": [
     "apps/*"
-  ]
+  ],
+  "packageManager": "yarn@4.4.0"
 }
