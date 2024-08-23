@@ -18,7 +18,7 @@ import {
   ATTR_SERVICE_NAME,
   ATTR_SERVICE_VERSION,
 } from '@opentelemetry/semantic-conventions';
-import { SamplingDecorator } from 'src/sampling-decorator';
+import { SamplingDecorator } from './sampling-decorator';
 
 // diag.setLogger(new DiagConsoleLogger(), DiagLogLevel.DEBUG); // Uncomment this line to debug otel
 
