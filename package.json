@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "build": "yarn workspaces foreach --all -ptvi run build",
     "dev": "yarn workspaces foreach --all -ptvi run dev",
     "fe": "yarn workspace frontend",
     "be": "yarn workspace backend"
