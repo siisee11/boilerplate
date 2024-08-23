@@ -41,11 +41,6 @@ const logExporter = new OTLPLogExporter({
   },
 });
 const loggerProvider = new LoggerProvider({
-  // without resource we don't have proper service.name, service.version correlated with logs
-  // resource: detectResourcesSync({
-  //   // this have to be manually adjusted to match SDK OTEL_NODE_RESOURCE_DETECTORS
-  //   detectors: [envDetectorSync, processDetectorSync, hostDetectorSync],
-  // }),
   resource: new Resource({
     [ATTR_SERVICE_NAME]: `${process.env.OTEL_SERVICE_NAME}-${process.env.NODE_ENV}`,
     [ATTR_SERVICE_VERSION]: '1.0',
