@@ -1,9 +1,5 @@
-import Image from "next/image";
 import { Star, ChevronRight, Truck, Info, Snowflake } from "lucide-react";
-// import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-// import { Checkbox } from "@/components/ui/checkbox"
 import Header from "@/components/Header";
 
 export default function Component() {

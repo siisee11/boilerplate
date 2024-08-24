@@ -1,3 +1,4 @@
+import Header from '@/components/Header'
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -20,50 +21,7 @@ export default function Component() {
   return (
     <div>
       <div className="min-h-screen bg-gray-100">
-        {/* Header */}
-        <header className="bg-white shadow">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex justify-between items-center py-4">
-              <div className="flex items-center">
-                <Button variant="ghost" size="icon" className="mr-2 lg:hidden">
-                  <MenuIcon className="h-6 w-6" />
-                </Button>
-                <span className="text-2xl font-bold text-red-500">coupang</span>
-              </div>
-              <div className="hidden lg:flex flex-grow max-w-xl mx-4">
-                <Input
-                  type="text"
-                  placeholder="찾고 싶은 상품을 검색해보세요!"
-                  className="w-full"
-                />
-                <Button type="submit" className="ml-2">
-                  <SearchIcon className="h-4 w-4" />
-                </Button>
-              </div>
-              <div className="flex items-center">
-                <Button variant="ghost" size="sm" className="hidden lg:flex">
-                  <UserIcon className="h-4 w-4 mr-2" />
-                  로그인
-                </Button>
-                <Button variant="ghost" size="sm" className="hidden lg:flex">
-                  <ShoppingCartIcon className="h-4 w-4 mr-2" />
-                  장바구니
-                </Button>
-              </div>
-            </div>
-            <Tabs defaultValue="all" className="w-full">
-              <TabsList className="w-full justify-start">
-                <TabsTrigger value="all">전체</TabsTrigger>
-                <TabsTrigger value="fashion">패션의류/잡화</TabsTrigger>
-                <TabsTrigger value="beauty">뷰티</TabsTrigger>
-                <TabsTrigger value="food">식품</TabsTrigger>
-                <TabsTrigger value="kitchen">주방용품</TabsTrigger>
-              </TabsList>
-            </Tabs>
-          </div>
-        </header>
-
-        {/* Main Content */}
+        <Header/>
         <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="flex flex-col lg:flex-row gap-8">
             {/* Product Image */}

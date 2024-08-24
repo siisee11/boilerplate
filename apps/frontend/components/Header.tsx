@@ -8,12 +8,9 @@ export default function Header() {
         <Category></Category>
         <div className="space-y-3">
           <div className="container mx-auto px-4 flex items-center justify-between">
-            <Image
-              src="https://image7.coupangcdn.com/image/coupang/common/logo_coupang_w350.png"
-              alt="Coupang Logo"
-              width={180}
-              height={40}
-            />
+            <a href="/">
+              <Image src="https://image7.coupangcdn.com/image/coupang/common/logo_coupang_w350.png" alt="Coupang Logo" width={180} height={40} />
+            </a>
             <div className="flex-grow mx-4">
               <SearchBar></SearchBar>
             </div>
@@ -38,14 +35,17 @@ function Category() {
 function SearchBar() {
   return (
     <div className="relative">
-      <input
-        type="text"
-        placeholder="찾고 싶은 상품을 검색해보세요!"
-        className="w-full p-2 pl-10 border border-blue-300 rounded-md"
-      />
-      <a href="/search">
-        <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
-      </a>
+      <form method="get" action="/search">
+        <input
+          name="keyword"
+          type="text"
+          placeholder="찾고 싶은 상품을 검색해보세요!"
+          className="w-full p-2 pl-10 border border-blue-300 rounded-md"
+        />
+        <button>
+          <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+        </button>
+      </form>
     </div>
   );
 }
