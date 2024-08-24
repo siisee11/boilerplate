@@ -7,7 +7,8 @@ const nextConfig = {
             "image7.coupangcdn.com",
             "image9.coupangcdn.com",
             "image10.coupangcdn.com",
-            "generated.vusercontent.net"
+            "thumbnail9.coupangcdn.com",
+            "generated.vusercontent.net",
         ],
     },
 };
