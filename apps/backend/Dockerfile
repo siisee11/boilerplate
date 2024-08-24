@@ -9,6 +9,7 @@ COPY pnpm-lock.yaml .
 RUN pnpm install
 
 COPY ./src ./src
+COPY ./libs ./libs
 COPY nest-cli.json .
 COPY tsconfig.json .
 COPY tsconfig.build.json .
