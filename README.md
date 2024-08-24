@@ -1,20 +1,15 @@
-## Setup yarn version
-
-yarn set version berry
-
-## How to install
-
-```
-$ yarn install
-$ yarn workspaces focus backend
-```
-
 ## How to run
 
+1. Go to app folder & run
+
 ```
-$ yarn dev       // run all
-$ yarn fe dev     // run frontend
-$ yarn be dev    // run backend
+$ cd apps/backend
+$ pnpm dev
+```
+
+```
+$ cd apps/frontend
+$ pnpm dev
 ```
 
 ## How to add packages
